@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-principal: #2c3639;
+    --cor-secundaria: #dcd7c9;
+    --cor-terciaria: #a27b5c;
+    --cor-hover: #3f4e4f;
+
+    --font-principal: "Krona One", sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    height: 100vh;
+}
+
+.cabecalho {
+    padding: 2% 0 0 6%;
+}
+
+.cabecalho_nav {
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho_links {
+    color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 32px; */
+}
+
+.content_section {
+    width: 700px;
+    padding: 6%;
+}
+
+.content_section_titulo {
+    font-family: var(--font-principal);
+    /* font-size: 24px; */
+}
+
+.content_section_destaque {
+    color: var(--cor-terciaria);
+}
+
+.content_section_texto {
+    padding: 35px 0;
+    font-family: var(--font-secundaria);
+}
+
+.texto_explicativo {
+    padding: 20px 0;
+    font-family: var(--font-secundaria);
+}
+
+.content_section_div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    font-family: var(--font-principal);
+}
+
+/* .content_section_div_titulo {
+} */
+
+.content_section_div_links {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px dashed var(--cor-terciaria);
+    border-radius: 16%;
+    padding: 20px;
+}
+
+.content_section_div_links:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-terciaria);
+}
+
+.img_logo {
+    height: 65%;
+    padding: 6% 0 0 0;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+}
+
+.rodape_texto {
+    font-family: var(--font-principal);
+}
+
+.rodape_texto:hover {
+    color: var(--cor-hover);
+}
